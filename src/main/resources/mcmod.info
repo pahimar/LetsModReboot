@@ -1,0 +1,16 @@
+[
+{
+  "modid": "letsmod",
+  "name": "Let's Mod",
+  "description": "Let's mod with pahimar!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["pahimar"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
