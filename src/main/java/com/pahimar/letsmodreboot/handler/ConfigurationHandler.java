@@ -9,6 +9,7 @@ import java.io.File;
 
 public class ConfigurationHandler
 {
+    public static final ConfigurationHandler INSTANCE = new ConfigurationHandler();
     public static Configuration configuration;
     public static boolean testValue = false;
 
@@ -18,6 +19,7 @@ public class ConfigurationHandler
         if (configuration == null)
         {
             configuration = new Configuration(configFile);
+            INSTANCE.loadConfiguration();
         }
     }
 
