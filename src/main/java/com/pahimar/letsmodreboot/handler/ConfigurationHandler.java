@@ -18,6 +18,17 @@ public class ConfigurationHandler
         if (configuration == null)
         {
             configuration = new Configuration(configFile);
+            loadConfiguration();
+        }
+    }
+
+    private static void loadConfiguration()
+    {
+        testValue = configuration.getBoolean("configValue", Configuration.CATEGORY_GENERAL, false, "This is an example configuration value");
+
+        if (configuration.hasChanged())
+        {
+            configuration.save();
         }
     }
 
@@ -27,16 +38,6 @@ public class ConfigurationHandler
         if (event.modID.equalsIgnoreCase(Reference.MOD_ID))
         {
             loadConfiguration();
-        }
-    }
-
-    public void loadConfiguration()
-    {
-        testValue = configuration.getBoolean("configValue", Configuration.CATEGORY_GENERAL, false, "This is an example configuration value");
-
-        if (configuration.hasChanged())
-        {
-            configuration.save();
         }
     }
 }
