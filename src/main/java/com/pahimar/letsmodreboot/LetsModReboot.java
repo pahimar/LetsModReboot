@@ -1,6 +1,7 @@
 package com.pahimar.letsmodreboot;
 
 import com.pahimar.letsmodreboot.handler.ConfigurationHandler;
+import com.pahimar.letsmodreboot.init.ModItems;
 import com.pahimar.letsmodreboot.proxy.IProxy;
 import com.pahimar.letsmodreboot.reference.Reference;
 import com.pahimar.letsmodreboot.utility.LogHelper;
@@ -26,6 +27,8 @@ public class LetsModReboot
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
         LogHelper.info("Pre Initialization Complete!");
+
+        ModItems.init();
     }
 
     @Mod.EventHandler
