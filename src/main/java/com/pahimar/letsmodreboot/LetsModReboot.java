@@ -1,6 +1,7 @@
 package com.pahimar.letsmodreboot;
 
 import com.pahimar.letsmodreboot.handler.ConfigurationHandler;
+import com.pahimar.letsmodreboot.init.ModBlocks;
 import com.pahimar.letsmodreboot.init.ModItems;
 import com.pahimar.letsmodreboot.proxy.IProxy;
 import com.pahimar.letsmodreboot.reference.Reference;
@@ -29,6 +30,8 @@ public class LetsModReboot
         LogHelper.info("Pre Initialization Complete!");
 
         ModItems.init();
+
+        ModBlocks.init();
     }
 
     @Mod.EventHandler
