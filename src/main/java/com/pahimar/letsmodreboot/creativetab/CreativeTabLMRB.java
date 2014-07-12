@@ -14,11 +14,5 @@ public class CreativeTabLMRB
         {
             return ModItems.mapleLeaf;
         }
-
-        @Override
-        public String getTranslatedTabLabel()
-        {
-            return "Let's Mod Reboot";
-        }
     };
 }
