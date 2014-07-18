@@ -25,8 +25,11 @@ public class LetsModReboot
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
+        //network handling
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+        //initialize items
+        //initialize blocks
         LogHelper.info("Pre Initialization Complete!");
 
         ModItems.init();
@@ -37,12 +40,17 @@ public class LetsModReboot
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
+        //register gui
+        //register tile entities
+        //register crafting recipes
+        //general event handling
         LogHelper.info("Initialization Complete!");
     }
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
+        //wrap things up
         LogHelper.info("Post Initialization Complete!");
     }
 }
