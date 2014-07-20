@@ -2,6 +2,7 @@ package com.pahimar.letsmodreboot.init;
 
 import com.pahimar.letsmodreboot.block.BlockFlag;
 import com.pahimar.letsmodreboot.block.BlockLMRB;
+import com.pahimar.letsmodreboot.reference.Names;
 import com.pahimar.letsmodreboot.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -12,6 +13,6 @@ public class ModBlocks
 
     public static void init()
     {
-        GameRegistry.registerBlock(flag, "flag");
+        GameRegistry.registerBlock(flag, Names.Blocks.FLAG);
     }
 }

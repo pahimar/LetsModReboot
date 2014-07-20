@@ -1,3 +1,13 @@
-item.letsmodreboot:mapleLeaf.name=Maple Leaf of Awesomeness
-tile.letsmodreboot:flag.name=Canadian Flag of Awesomeness
+# Keys
+keys.letsmodreboot.category=Let's Mod Reboot
+keys.letsmodreboot.charge=Charge
+keys.letsmodreboot.release=Release
+
+# Creative Tabs
 itemGroup.letsmodreboot=Let's Mod Reboot
+
+# Items
+item.letsmodreboot:mapleLeaf.name=Maple Leaf of Awesomeness
+
+#Blocks
+tile.letsmodreboot:flag.name=Canadian Flag of Awesomeness
