@@ -3,6 +3,7 @@ package com.pahimar.letsmodreboot;
 import com.pahimar.letsmodreboot.handler.ConfigurationHandler;
 import com.pahimar.letsmodreboot.init.ModBlocks;
 import com.pahimar.letsmodreboot.init.ModItems;
+import com.pahimar.letsmodreboot.init.Recipes;
 import com.pahimar.letsmodreboot.proxy.IProxy;
 import com.pahimar.letsmodreboot.reference.Reference;
 import com.pahimar.letsmodreboot.utility.LogHelper;
@@ -37,6 +38,7 @@ public class LetsModReboot
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
+        Recipes.init();
         LogHelper.info("Initialization Complete!");
     }
 
